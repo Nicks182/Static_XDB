@@ -1,0 +1,124 @@
+﻿
+
+.Projects_Edit_Form
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    min-height: 0;
+}
+
+.Projects_Edit_Form_Body
+{
+    padding-top: 10px;
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "project project project project"
+        "scripts scripts scripts scripts"
+        "name name sqlversion sqlversion"
+        "server server port port"
+        "dbname dbname intergrated trust"
+        "username username password password"
+        "description description description description";
+    
+    gap: 5px;
+    overflow: auto;
+    align-items: end;
+}
+
+.Screen[ShowInfo="1"] > .Screen_Body > .Screen_Body_Content .Projects_Edit_Form_Body
+{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "project project"
+        "scripts scripts"
+        "name name"
+        "sqlversion sqlversion"
+        "server server"
+        "port port"
+        "dbname dbname"
+        "username username"
+        "password password"
+        "intergrated trust"
+        "description description";
+}
+
+.Projects_Edit_Form_Footer
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    justify-items: end;
+}
+
+.Projects_Edit_Form_Item_Caption
+{
+    padding-top: 10px;
+}
+
+.Projects_Edit_Form_Body_Project
+{
+    grid-area: project;
+}
+
+.Projects_Edit_Form_Body_Scripts
+{
+    grid-area: scripts;
+}
+
+.Projects_Edit_Form_Body_Name
+{
+    grid-area: name;
+}
+
+.Projects_Edit_Form_Body_Sqlversion
+{
+    grid-area: sqlversion;
+}
+
+.Projects_Edit_Form_Body_Server
+{
+    grid-area: server;
+}
+
+.Projects_Edit_Form_Body_Port
+{
+    grid-area: port;
+}
+
+.Projects_Edit_Form_Body_DBName
+{
+    grid-area: dbname;
+}
+
+.Projects_Edit_Form_Body_Username
+{
+    grid-area: username;
+}
+
+.Projects_Edit_Form_Body_Password
+{
+    grid-area: password;
+}
+
+.Projects_Edit_Form_Body_Intergrated
+{
+    grid-area: intergrated;
+}
+
+.Projects_Edit_Form_Body_Trust
+{
+    grid-area: trust;
+}
+
+.Projects_Edit_Form_Body_Description
+{
+    grid-area: description;
+}
+
+    .Projects_Edit_Form_Body_Description > textarea
+    {
+        height: 160px;
+    }

@@ -1,0 +1,86 @@
+﻿
+.ViewDiff_SubHeader
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+.ViewDiff_Body
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 5px;
+    min-height: 0;
+}
+
+.ViewDiff_Body_Panel
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto;
+    gap: 5px;
+    min-height: 0;
+}
+
+.ViewDiff_Body_DiffHeader
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+.ViewDiff_Body_DiffPane
+{
+    display: grid;
+    grid-template-columns: min-content min-content auto;
+    grid-auto-rows: min-content;
+    gap: 0px;
+    padding: 3px;
+    overflow: auto;
+    
+}
+
+.ViewDiff_Body_DiffPane_Line
+{
+    height: 20px;
+    white-space: nowrap;
+    padding: 2px 3px;
+    width: 100%;
+    /*display: grid;
+    grid-template-columns: min-content auto;
+    gap: 5px;*/
+}
+
+    .ViewDiff_Body_DiffPane_Line[DiffAlign="1"]
+    {
+        text-align: right;
+    }
+
+    /*Modified*/
+    .ViewDiff_Body_DiffPane_Line[DiffType="1"]
+    {
+        background-color: rgba(255, 255, 0, 1);
+        font-weight: bold;
+    }
+
+    /*Deleted*/
+    .ViewDiff_Body_DiffPane_Line[DiffType="2"]
+    {
+        background-color: rgba(116, 0, 0, 0.5);
+        font-weight: bold;
+    }
+
+    /*Inserted*/
+    .ViewDiff_Body_DiffPane_Line[DiffType="3"]
+    {
+        background-color: rgba(182, 255, 0, 0.5);
+        font-weight: bold;
+    }
+
+    /*Imaginary*/
+    .ViewDiff_Body_DiffPane_Line[DiffType="4"]
+    {
+        background-color: rgba(128, 128, 128, 0.5);
+        font-weight: bold;
+    }
+

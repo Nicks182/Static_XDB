@@ -1,0 +1,78 @@
+﻿
+
+.Projects
+{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+    .Projects > [CompType="3"]
+    {
+        font-size: 37px;
+    }
+
+.Projects_Header
+{
+    background-color: var(--BGHH_Theme);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    gap: 10px;
+    justify-items: center;
+    font-size: 22px;
+    align-items: center;
+    height: 40px;
+}
+
+.Projects_Body
+{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: min-content min-content auto;
+    grid-auto-rows: min-content;
+    gap: 10px;
+    font-size: 18px;
+    overflow: auto;
+}
+
+.Projects_Body_Header_Text
+{
+    border-color: var(--AC_Theme);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content;
+    align-content: center;
+}
+
+.Projects_Body [CompType="3"]
+{
+    font-size: 18px;
+}
+
+.Projects_Body_Item_Edit
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content min-content;
+    gap: 3px;
+    padding-bottom: 5px;
+}
+
+.Projects_Body_Item_Record
+{
+    border-color: var(--BGHH_Theme);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content;
+    align-content: center;
+    
+}

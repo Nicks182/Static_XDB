@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static-XDB</title>
+
+    <link href="font/material_symbol_styles.css?ver=2" rel="stylesheet" />
+
+    <link href="Style.min.css?ver=1" rel="stylesheet" />
+    <script src="Script.min.js?ver=1"></script>
+
+</head>
+<body>
+
+    <div id="Div_Body" class="Page_Body">
+
+    </div>
+    
+    <div id="Div_ModalHolder">
+        
+    </div>
+
+    <div id="Div_BusyHolder">
+
+    </div>
+
+    <script>
+        function callDotNet()
+        {
+            window.external.sendMessage('Hi .NET! 🤖');
+        }
+
+        window.external.receiveMessage(message => _Message_Receive(message));
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿
+
+.Screen
+{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content auto min-content;
+    gap: 5px;
+    grid-template-areas:
+        "screen_header"
+        "screen_subheader"
+        "screen_body"
+        "screen_footer";
+    min-height: 0;
+}
+
+.Screen_Header
+{
+    background-color: var(--BGHH_Theme);
+    grid-area: screen_header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    align-items: center;
+    font-size: 22px;
+    height: 40px;
+}
+
+.Screen_Header_Default
+{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-rows: min-content;
+    gap: 5px;
+    grid-template-areas: "screen_header_df_info screen_header_df_text blank";
+}
+
+.Screen_Header_Default_Info
+{
+    grid-area: screen_header_df_info;
+}
+
+.Screen_Header_Default_Text
+{
+    grid-area: screen_header_df_text;
+    justify-self: center;
+}
+
+.Screen_Sub_Header
+{
+    grid-area: screen_subheader;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+}
+
+.Screen_Body
+{
+    grid-area: screen_body;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    min-height: 0;
+}
+
+.Screen_Body_Info
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+    width: 0%;
+    overflow: hidden;
+    transition: all 400ms;
+    min-height: 0;
+}
+
+.Screen_Body_Content
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+    width: 100%;
+    transition: all 400ms;
+    min-height: 0;
+}
+
+.Screen_Footer
+{
+    grid-area: screen_footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+}
+
+
+.Screen[ShowInfo="1"]
+{
+}
+
+    .Screen[ShowInfo="1"] > .Screen_Body
+    {
+        gap: 5px;
+    }
+
+    .Screen[ShowInfo="1"] > .Screen_Body > .Screen_Body_Info
+    {
+        width: 50%;
+    }
+
+    .Screen[ShowInfo="1"] > .Screen_Body > .Screen_Body_Content
+    {
+        width: 50%;
+    }

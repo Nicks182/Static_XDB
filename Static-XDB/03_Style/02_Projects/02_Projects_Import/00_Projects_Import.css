@@ -1,0 +1,25 @@
+﻿
+
+.Projects_Import
+{
+    
+}
+
+
+.Projects_Import_Footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 10px;
+}
+
+.Projects_Import_Footer_CancelBtn
+{
+    justify-self: start;
+}
+
+.Projects_Import_Footer_SaveBtn
+{
+    justify-self: end;
+}

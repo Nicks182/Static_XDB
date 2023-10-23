@@ -1,0 +1,68 @@
+﻿
+
+/* Form Item */
+[CompType="71"]
+{
+    border: 0;
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+        "caption"
+        "input";
+    gap: 5px;
+    padding: 3px 8px;
+    align-items: center;
+}
+
+    [CompType="71"][CapPos="1"]
+    {
+        grid-template-columns: min-content auto;
+        grid-template-rows: min-content;
+        grid-template-areas:
+            "input caption";
+    }
+
+    [CompType="71"][CapPos="2"]
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content;
+        grid-template-areas:
+            "input"
+            "caption";
+    }
+
+    [CompType="71"][CapPos="3"]
+    {
+        grid-template-columns: min-content auto;
+        grid-template-rows: min-content;
+        grid-template-areas:
+            "caption input";
+    }
+
+[CompType="71"][IsCheck="1"]
+{
+    grid-template-columns: min-content auto;
+    grid-template-rows: min-content;
+    align-items: center;
+}
+
+
+/* Form Item Input */
+    [CompType="71"] > [FormCaption="1"]
+    {
+        grid-area: caption;
+        font-size: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+        
+
+/* Form Item Caption */
+    [CompType="71"] > [FormInput="1"]
+    {
+        grid-area: input;
+    }

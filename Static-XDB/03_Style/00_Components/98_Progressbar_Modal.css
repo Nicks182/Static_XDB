@@ -1,0 +1,37 @@
+﻿
+.Progressbar_Modal_Body
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content;
+    gap: 5px;
+    width: 650px;
+}
+
+.Progressbar_Modal_Body_Time
+{
+    justify-self: center;
+    width: unset;
+}
+
+.Progressbar_Modal_Footer
+{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    gap: 5px;
+    width: 100%;
+}
+
+.Progressbar_Modal_Footer_CancelBtn
+{
+    justify-self: end;
+    width: 74px;
+}
+
+.Progressbar_Modal_Footer_OKBtn
+{
+    justify-self: end;
+    width: 74px;
+}

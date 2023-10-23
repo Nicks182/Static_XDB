@@ -1,0 +1,44 @@
+﻿
+[CompType="5"]
+{
+    border-color: var(--BGHH_Theme);
+    background-color: rgba(0,0,0,0.20);
+    color: var(--T_Theme);
+    border-style: none;
+    border-width: 1px;
+    border-bottom-style: solid;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-rows: min-content;
+    gap: 5px;
+    grid-template-areas: "text icon";
+    align-items: center;
+    align-content: center;
+    outline: 0;
+    padding: 5px;
+    width: 100%;
+    min-height: 28px;
+}
+
+
+    [CompType="5"]:focus, [CompType="5"]:hover
+    {
+        border-color: var(--AC_Theme);
+        filter: brightness(var(--Hover));
+    }
+
+
+    [CompType="5"] > label
+    {
+        grid-area: text;
+        cursor: pointer;
+        justify-self: start;
+    }
+
+
+
+[CompType="5"] > span
+{
+    grid-area: icon;
+}

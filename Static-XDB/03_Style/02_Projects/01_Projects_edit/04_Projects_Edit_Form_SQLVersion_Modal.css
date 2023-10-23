@@ -1,0 +1,15 @@
+﻿
+
+.Projects_Edit_Form_SQLVersion_Modal
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+
+.Projects_Edit_Form_SQLVersion_Footer
+{
+    padding: 5px;
+}
+

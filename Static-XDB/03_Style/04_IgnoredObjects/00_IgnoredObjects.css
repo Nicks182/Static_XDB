@@ -1,0 +1,140 @@
+﻿
+.IgnoredObjects
+{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+    .IgnoredObjects > [CompType="3"]
+    {
+        font-size: 37px;
+    }
+
+.IgnoredObjects_Header
+{
+    background-color: var(--BGHH_Theme);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-rows: min-content;
+    grid-template-areas:
+        "left center right";
+    gap: 10px;
+    justify-items: center;
+    font-size: 22px;
+    align-items: center;
+    height: 40px;
+}
+
+.IgnoredObjects_Header_InfoBtn
+{
+    grid-area: left;
+}
+
+.IgnoredObjects_Header_Text
+{
+    grid-area: center;
+}
+
+.IgnoredObjects_Body
+{
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto;
+    gap: 10px;
+}
+
+.IgnoredObjects_Body_ProjectName
+{
+    justify-self: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.IgnoredObjects_Body_Container
+{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+    min-height: 0;
+    gap: 5px;
+}
+
+    .IgnoredObjects_Body_Container[IsHidden="1"]
+    {
+        gap: 0px;
+    }
+
+        .IgnoredObjects_Body_Container[IsHidden="1"] > .IgnoredObjects_Info
+        {
+            width: 0%;
+            overflow: hidden;
+        }
+
+        .IgnoredObjects_Body_Container[IsHidden="1"] > .IgnoredObjects_Body_Items
+        {
+            width: 100%;
+        }
+
+.IgnoredObjects_Body_Items
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    min-height: 0;
+    transition: all 300ms;
+    width: 50%;
+}
+
+.IgnoredObjects_Body_Items_List
+{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: min-content min-content auto;
+    grid-auto-rows: min-content;
+    gap: 10px;
+    font-size: 18px;
+    overflow:auto;
+}
+
+.IgnoredObjects_Body_Items_Header_Text
+{
+    border-color: var(--AC_Theme);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content;
+    align-content: center;
+    font-weight: bold;
+}
+
+.IgnoredObjects_Body_Items [CompType="3"]
+{
+    font-size: 18px;
+}
+
+.IgnoredObjects_Body_Items_Item_Edit
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 3px;
+}
+
+.IgnoredObjects_Body_Items_Item_Record
+{
+    border-color: var(--BGHH_Theme);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content;
+    align-content: center;
+}

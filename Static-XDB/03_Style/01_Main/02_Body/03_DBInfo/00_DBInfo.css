@@ -1,0 +1,23 @@
+﻿
+
+.Main_Body_DBInfo
+{
+    
+}
+
+
+
+
+.Main_Body_DBInfo_Item_Caption
+{
+    
+}
+
+.Main_Body_DBInfo_ViewChanges
+{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 5px;
+}

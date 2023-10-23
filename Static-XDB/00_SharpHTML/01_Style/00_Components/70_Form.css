@@ -1,0 +1,41 @@
+﻿
+[CompType="70"]
+{
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto min-content;
+    gap: 5px;
+    grid-template-areas:
+        "header"
+        "body"
+        "footer";
+}
+
+[CompType="70.0"]
+{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    justify-items: stretch;
+    font-size: 22px;
+    min-height: 0;
+}
+
+[CompType="70.1"]
+{
+    grid-area: body;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-self: stretch;
+    min-height: 0;
+}
+
+[CompType="70.2"]
+{
+    grid-area: footer;
+    min-height: 0;
+}
+

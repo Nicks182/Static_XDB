@@ -1,0 +1,22 @@
+﻿
+
+.Main_Body_Project
+{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+
+/*#Btn_Project
+{
+    border-color: var(--AC_Theme);
+    background-color: var(--AC_Theme);
+    width: 100%;
+    filter: brightness(110%);
+}
+
+    #Btn_Project:focus, #Btn_Project:hover
+    {
+        filter: brightness(120%);
+    }*/

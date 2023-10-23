@@ -1,0 +1,94 @@
+﻿
+
+.IgnoredObjects_Edit_SubHeader
+{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content;
+    gap: 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.IgnoredObjects_Edit_SubHeader_Btns
+{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.IgnoredObjects_Edit_SubHeader_Text
+{
+    padding: 5px 5px 0px 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.IgnoredObjects_Edit_Header_InfoBtn
+{
+    grid-area: left;
+}
+
+.IgnoredObjects_Edit_Header_Text
+{
+    grid-area: center;
+}
+
+.IgnoredObjects_Edit_Body
+{
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+    min-height: 0;
+    gap: 5px;
+}
+
+    .IgnoredObjects_Edit_Body[IsHidden="1"]
+    {
+        gap: 0px;
+    }
+
+        .IgnoredObjects_Edit_Body[IsHidden="1"] > .IgnoredObjects_Edit_Info
+        {
+            width: 0%;
+            overflow: hidden;
+        }
+
+        .IgnoredObjects_Edit_Body[IsHidden="1"] > .IgnoredObjects_Edit_Form
+        {
+            width: 100%;
+        }
+
+        .IgnoredObjects_Edit_Body[IsHidden="1"] .IgnoredObjects_Edit_Form_Body
+        {
+            /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+        }
+
+.IgnoredObjects_Edit_Footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 10px;
+}
+
+.IgnoredObjects_Edit_Footer_CancelBtn
+{
+    justify-self: start;
+}
+
+.IgnoredObjects_Edit_Footer_SaveBtn
+{
+    justify-self: end;
+}
+
+
+

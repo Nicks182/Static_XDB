@@ -1,0 +1,43 @@
+﻿
+[CompType="7"]
+{
+    border-color: var(--BGHH_Theme);
+    background-color: rgba(0,0,0,0.20);
+    color: var(--T_Theme);
+    border-style: none;
+    border-width: 1px;
+    border-bottom-style: solid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    gap: 0px;
+    grid-template-areas: "content";
+    align-items: center;
+    align-content: center;
+    outline: 0;
+    padding: 0px;
+    width: 100%;
+    
+}
+
+
+    [CompType="7"]:focus, [CompType="7"]:hover
+    {
+        border-color: var(--AC_Theme);
+        filter: brightness(var(--Hover));
+    }
+
+
+    [CompType="7"] > div
+    {
+        grid-area: content;
+        min-height: 28px;
+        width: var(--ProgressbarWidth);
+        background-color: var(--ACD_Theme);
+        transition: all 1000ms;
+    }
+
+    [CompType="7"] > label
+    {
+        grid-area: content;
+    }

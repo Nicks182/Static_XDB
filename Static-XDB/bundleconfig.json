@@ -1,0 +1,18 @@
+[
+  {
+    "outputFileName": "wwwroot/Script.min.js",
+    "inputFiles": [
+      "00_SharpHTML/02_Script/**/*.js",
+      "04_Script/**/*.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Style.min.css",
+    "inputFiles": [
+      "00_SharpHTML/01_Style/**/*.css",
+      "03_Style/**/*.css"
+    ]
+  }
+]
+
+

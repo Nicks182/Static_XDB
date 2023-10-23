@@ -1,0 +1,29 @@
+﻿
+
+.Projects_Import_Body
+{
+    overflow: auto;
+}
+
+.Projects_Import_Body_Info_Holder
+{
+    padding: 5px;
+}
+
+.Projects_Import_Body_Info
+{
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-auto-rows: min-content;
+    gap: 5px;
+    padding: 5px;
+}
+
+
+.Projects_Import_Body_Info_Ignores
+{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-auto-rows: min-content;
+}

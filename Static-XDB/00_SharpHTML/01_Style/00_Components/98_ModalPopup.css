@@ -1,0 +1,82 @@
+﻿
+
+[CompType="98"]
+{
+    
+}
+
+.Modal
+{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    max-height: 90vh;
+    max-width: 90vw;
+}
+
+    .Modal[IsHidden="1"]
+    {
+        display: none;
+    }
+
+
+.Modal_Mask
+{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(10,10,10,0.4);
+    z-index: -1;
+    backdrop-filter: blur(0.15rem);
+}
+
+.Modal[NoMask="1"] > .Modal_Mask
+{
+    display: none;
+}
+
+.Modal_Content
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 2px;
+    background-color: var(--BG_Theme);
+    box-shadow: 0 13px 17px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.Modal_Content_Header
+{
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-rows: min-content;
+    background-color: var(--BGHH_Theme);
+    padding: 3px;
+    border-radius: 5px 5px 0px 0px;
+    align-items: center;
+}
+
+.Modal_Content_Body
+{
+    padding: 3px;
+    overflow: auto;
+}
+
+.Modal_Content_Footer
+{
+    border-top: 1px solid var(--BGH_Theme);
+    padding: 3px;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-items: right;
+}
+
+

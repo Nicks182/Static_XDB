@@ -1,0 +1,16 @@
+﻿
+[CompType="8"]
+{
+    color: var(--T_Theme);
+    border-style: none;
+    padding: 2px;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0,0,0,0.20);
+}
+
+
+    [CompType="8"]:focus, [CompType="8"]:hover
+    {
+        filter: brightness(var(--Hover));
+    }

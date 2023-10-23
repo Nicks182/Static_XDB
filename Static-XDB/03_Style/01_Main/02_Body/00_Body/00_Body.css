@@ -1,0 +1,36 @@
+﻿
+
+.Main_Body
+{
+    /*display: flex;
+    flex-direction: column;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content auto;
+    gap: 5px;
+    overflow: auto;
+}
+
+
+.Main_Body_Section
+{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-auto-rows: min-content;
+    gap: 10px;
+}
+
+.Main_Body_Section_Header
+{
+    grid-column: span 2;
+    font-size: 20px;
+    color: var(--AC_Theme);
+    text-decoration: underline;
+}
+
+.Main_Body_Section_Item_Caption
+{
+    white-space: nowrap;
+    align-self: center;
+}

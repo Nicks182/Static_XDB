@@ -1,0 +1,45 @@
+﻿
+[CompType="2"]
+{
+    color: var(--AC_Theme);
+    border-color: rgba(0,0,0,0);
+    border-style: none;
+    border-width: 1px;
+    border-bottom-style: solid;
+    cursor: pointer;
+    justify-self: start;
+    background-color: rgba(0,0,0,0.20);
+    outline: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    height: 28px;
+    width: 32px;
+}
+
+
+    [CompType="2"] > #Check
+    {
+        visibility: hidden;
+        font-size: 26px;
+    }
+
+    [CompType="2"][Value="1"] > #Check
+    {
+        visibility: visible;
+    }
+
+    [CompType="2"][Value="1"]
+    {
+        /*color: var(--AC_Theme);*/
+    }
+
+    [CompType="2"]:focus, [CompType="2"]:hover
+    {
+        border-color: var(--AC_Theme) !important;
+        filter: brightness(120%);
+        
+    }

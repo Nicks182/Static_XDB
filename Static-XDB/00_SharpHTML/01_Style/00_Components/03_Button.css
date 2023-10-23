@@ -1,0 +1,82 @@
+﻿
+[CompType="3"]
+{
+    border-color: var(--BGHH_Theme);
+    background-color: var(--BGHH_Theme);
+    color: var(--T_Theme);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    grid-template-rows: min-content;
+    gap: 5px;
+    grid-template-areas: "left center right";
+    align-items: center;
+    align-content: center;
+    outline: 0;
+    padding: 3px;
+    min-height: 28px;
+}
+
+    [CompType="3"][IsHidden="1"]
+    {
+        display: none;
+    }
+
+    [CompType="3"][IsFlat="0"]
+    {
+        border-color: var(--AC_Theme);
+        background-color: var(--AC_Theme);
+    }
+
+    [CompType="3"]:focus, [CompType="3"]:hover
+    {
+        border-color: var(--AC_Theme);
+        background-color: var(--AC_Theme);
+        filter: brightness(var(--Hover));
+    }
+
+
+    [CompType="3"] > label
+    {
+        grid-area: center;
+        cursor: pointer;
+    }
+
+    [CompType="3"] > label[Align="Left"]
+    {
+        justify-self: left;
+    }
+
+    [CompType="3"] > label[Align="Center"]
+    {
+        justify-self: center;
+    }
+
+    [CompType="3"] > label[Align="Right"]
+    {
+        justify-self: right;
+    }
+
+
+[CompType="3"] > span
+{
+    
+}
+
+    [CompType="3"] > span[Position="Left"]
+    {
+        grid-area: left;
+    }
+
+    [CompType="3"] > span[Position="Center"]
+    {
+        grid-area: center;
+    }
+
+    [CompType="3"] > span[Position="Right"]
+    {
+        grid-area: right;
+    }

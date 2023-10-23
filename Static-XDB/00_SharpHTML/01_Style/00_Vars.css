@@ -1,0 +1,53 @@
+﻿
+:root
+{
+    /* App background ................ */
+    --BG_Red: 21;
+    --BG_Green: 27;
+    --BG_Blue: 30;
+    --BG_Theme: rgba(var(--BG_Red), var(--BG_Green), var(--BG_Blue),1);
+    /* App background Dark ......... */
+    --BGD_Offset: -10;
+    --BGD_Red: calc(var(--BG_Red) + var(--BGD_Offset));
+    --BGD_Green: calc(var(--BG_Green) + var(--BGD_Offset));
+    --BGD_Blue: calc(var(--BG_Blue) + var(--BGD_Offset));
+    --BGD_Theme: rgba(var(--BGD_Red), var(--BGD_Green), var(--BGD_Blue),1);
+    /* App background Light */
+    --BGH_Offset: 15;
+    --BGH_Red: calc(var(--BG_Red) + var(--BGH_Offset));
+    --BGH_Green: calc(var(--BG_Green) + var(--BGH_Offset));
+    --BGH_Blue: calc(var(--BG_Blue) + var(--BGH_Offset));
+    --BGH_Theme: rgba(var(--BGH_Red), var(--BGH_Green), var(--BGH_Blue),1);
+    /* App background Light Light */
+    --BGHH_Offset: 30;
+    --BGHH_Red: calc(var(--BG_Red) + var(--BGHH_Offset));
+    --BGHH_Green: calc(var(--BG_Green) + var(--BGHH_Offset));
+    --BGHH_Blue: calc(var(--BG_Blue) + var(--BGHH_Offset));
+    --BGHH_Theme: rgba(var(--BGHH_Red), var(--BGHH_Green), var(--BGHH_Blue),1);
+    /* App accent color .............. */
+    --AC_Red: 80;
+    --AC_Green: 125;
+    --AC_Blue: 156;
+    --AC_Theme: rgba(var(--AC_Red), var(--AC_Green), var(--AC_Blue),1);
+    /* App accent Dark */
+    --ACD_Offset: -20;
+    --ACD_Red: calc(var(--AC_Red) + var(--ACD_Offset));
+    --ACD_Green: calc(var(--AC_Green) + var(--ACD_Offset));
+    --ACD_Blue: calc(var(--AC_Blue) + var(--ACD_Offset));
+    --ACD_Theme: rgba(var(--ACD_Red), var(--ACD_Green), var(--ACD_Blue),1);
+    /* App accent Light Light */
+    --ACH_Offset: 30;
+    --ACH_Red: calc(var(--AC_Red) + var(--ACH_Offset));
+    --ACH_Green: calc(var(--AC_Green) + var(--ACH_Offset));
+    --ACH_Blue: calc(var(--AC_Blue) + var(--ACH_Offset));
+    --ACH_Theme: rgba(var(--ACH_Red), var(--ACH_Green), var(--ACH_Blue),1);
+    /* App default text color ........ */
+    --T_Red: 185;
+    --T_Green: 185;
+    --T_Blue: 185;
+    --T_Theme: rgba(var(--T_Red), var(--T_Green), var(--T_Blue),1);
+    --Border_Radius_SM: 4px;
+    --Border_Radius_MD: 6px;
+    --Border_Radius_LG: 8px;
+    --Hover: 110%;
+}

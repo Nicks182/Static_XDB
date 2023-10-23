@@ -1,0 +1,48 @@
+﻿
+
+.Tracking_SubHeader
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px 0px;
+}
+
+.Tracking_Body
+{
+    overflow: auto;
+}
+
+
+.Tracking_Data_Body_Grid
+{
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    grid-auto-rows: min-content;
+}
+
+.Tracking_Data_Body_Grid_Cell
+{
+    display: flex;
+    padding: 3px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: var(--BGHH_Theme);
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+    .Tracking_Data_Body_Grid_Cell > [CompType="3"]
+    {
+        width: 100%;
+        font-size: 20px;
+    }
+
+.Tracking_Data_Body_Grid_Header
+{
+    font-weight: bold;
+    border-bottom-width: 2px;
+}
+

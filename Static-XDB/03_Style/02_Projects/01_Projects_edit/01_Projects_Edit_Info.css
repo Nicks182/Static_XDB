@@ -1,0 +1,47 @@
+﻿
+.Projects_Edit_Info
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    min-height: 0;
+}
+
+
+
+.Projects_Edit_Info_Body
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    gap: 5px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.Projects_Edit_Info_Body_Item
+{
+    padding: 5px;
+}
+
+.Projects_Edit_Info_Body_Item_Caption
+{
+}
+
+.Projects_Edit_Info_Body_Item_Text
+{
+    color: var(--AC_Theme);
+    font-style: italic;
+}
+
+.Projects_Edit_Info[IsHidden="1"]
+{
+    width: 0%;
+    padding: 0px;
+    overflow: hidden;
+}
+
+    .Projects_Edit_Info[IsHidden="1"] .Projects_Edit_Info_Body
+    {
+        overflow: hidden;
+    }

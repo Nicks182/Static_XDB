@@ -1,0 +1,56 @@
+@font-face
+{
+    font-family: 'Material Symbols Rounded';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url('material_symbols_rounded_all_v120.woff2') format('woff2');
+}
+
+
+
+
+[IsPulse="1"]
+{
+    animation-name: pulse;
+    animation-duration: attr(AnimDur ms);
+    animation-iteration-count: attr(AnimRunTime number, infinite);
+    /*animation: pulse attr(AnimDur) attr(AnimRunTime);*/
+}
+
+[IsPulse="1000I"]
+{
+    animation: pulse 1000ms infinite;
+}
+
+[IsPulse="2000I"]
+{
+    animation: pulse 2000ms infinite;
+}
+
+[IsPulse="3000I"]
+{
+    animation: pulse 3000ms infinite;
+}
+
+[IsPulse="30003"]
+{
+    animation: pulse 3000ms 3;
+}
+
+@keyframes pulse
+{
+    0%
+    {
+        font-variation-settings: 'wght' 100;
+    }
+
+    50%
+    {
+        font-variation-settings: 'wght' 700;
+    }
+
+    100%
+    {
+        font-variation-settings: 'wght' 100;
+    }
+}

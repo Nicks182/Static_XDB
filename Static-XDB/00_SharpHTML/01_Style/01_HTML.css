@@ -1,0 +1,32 @@
+﻿
+
+html
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--BG_Theme);
+    color: var(--T_Theme);
+    font-family: "Lato",sans-serif,Helvetica,Arial;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+input, textarea
+{
+    color: var(--T_Theme);
+    font-family: "Lato",sans-serif,Helvetica,Arial;
+    font-size: 14px;
+}
+
+div
+{
+    scroll-behavior: smooth;
+}
+
+*
+{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

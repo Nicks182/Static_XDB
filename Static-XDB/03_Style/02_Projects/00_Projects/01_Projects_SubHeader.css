@@ -1,0 +1,18 @@
+﻿
+.Projects_SubHeader
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 5px 0px;
+}
+
+.Projects_SubHeader_Btn_Add
+{
+    justify-self: start;
+}
+
+.Projects_SubHeader_Btn_Import
+{
+    justify-self: end;
+}
