@@ -1,4 +1,4 @@
-### Disclaimer
+# Disclaimer
 This app contains a lot of experimental ideas and concepts like how I'm trying to generate HTML. You will see weird and even stupid stuff, but hopefully you'll see something interesting as well. I needed an actual project to try and get a better idea of what can work and what doesn't so I decided to make this little scripting tool. This is also the first time I've used Photino.net.
 
 That said, the main function of the app, which is to turn a DB into scripts or turn scripts into a DB, does work... although there might still be quite a few bugs. 
@@ -6,7 +6,7 @@ That said, the main function of the app, which is to turn a DB into scripts or t
 Make Backups!
 
 
-### Functionality
+# Functionality
 There is a help section on each screen to help you through the process, but here is a brief description.
 
 ## Scripting
@@ -20,5 +20,5 @@ The app can also show you the differences between what's in your DB compared to 
 
 You can do this with objects like procedures, views, tables, ect, and also data. You will be able to see which records have changes on a per table basis, but the app will only show rows that have changes and not ALL rows in the table.
 
-### Youtube Demo
+# Youtube Demo
 [![Youtube Demo](https://img.youtube.com/vi/JsDsdqv3A14/hqdefault.jpg)](https://www.youtube.com/watch?v=JsDsdqv3A14)
