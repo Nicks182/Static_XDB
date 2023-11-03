@@ -29,10 +29,19 @@ namespace Static_XDB
 
             // Window title declared here for visibility
             string windowTitle = "Static-XDB";
-            
+
+            string browserControlInitParams = string.Empty;
+
+            if (PhotinoWindow.IsWindowsPlatform)
+            {
+                // Windows specific initialization parameters
+                browserControlInitParams = "--enable-smooth-scrolling";
+            }
+
             // Creating a new PhotinoWindow instance with the fluent API
             G_PhotinoWindow = new PhotinoWindow()
                 .SetTitle(windowTitle)
+                .SetBrowserControlInitParameters(browserControlInitParams)
                 //.SetIconFile("wwwroot/favicon.ico")
                 // Resize to a percentage of the main monitor work area
                 .SetUseOsDefaultSize(false)
